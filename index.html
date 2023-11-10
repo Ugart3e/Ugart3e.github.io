@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurante</title>
+    <link rel="icon" type="image/x-icon" href="/loggo.ico">
+    <link rel="stylesheet" href="/sass/output.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <audio id="miReproductor" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </head>
+  <body class="bodyd">
+    <div class="caja">
+        <button class="b1">Reservar Mesa</button>
+        <button class="b1">Donde Estamos</button>
+        <a href="promociones.html"><button class="b1">Promociones</button></a>
+        <button class="b1">Llámanos</button>
+        <a href="iniciar_sesion.html"><button class="b1">Iniciar sesion</button></a>
+    </div>    
+    <div class="imgp">
+        <h2 class="slogan">Eat What you Deserve</h2>
+        <video id="vid" controls width="640" height="360" style="margin-top: 100px;">
+          <source src="vid.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+    <div><a href="menu.html"><button type="button" id="bmenu">Menu</button></a></div>
+  
+    <script>
+      var reproductor = document.getElementById("miReproductor");
+      reproductor.play();
+      var video = document.getElementById("vid");
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<br>
+<footer>
+  <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://www.rest.com">Pizzaia Piackem</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://sadfgasdfg.com">Pepe Ugarte</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+</footer>
+  </body>
+</html>

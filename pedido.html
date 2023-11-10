@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/sass/output.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/loggo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <audio id="miReproductor" loop>
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
+</head>
+<body>
+    <div><a href="index.html"><button type="button">volver</button></a></div>
+    <div><h1 id="ch1">Añades algo mas?</h1></div>
+    <div id="ofertas">
+        <div id="ofertaa"><b><p class="text">Producto de Oferta 1</p></b>
+        <p class="ptx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi enim quo nostrum animi quibusdam quia, eum rem vel facere tenetur perspiciatis doloribus laborum soluta rerum odit neque nisi numquam!</p>
+            <button type="button" class="bofert">Añadir al carro</button>
+    </div>
+        <div id="ofertab"><b><p class="text">Producto de Oferta 2</p></b>
+        <p class="ptx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi enim quo nostrum animi quibusdam quia, eum rem vel facere tenetur perspiciatis doloribus laborum soluta rerum odit neque nisi numquam!</p>
+            <button type="button" class="bofert">Añadir al carro</button>
+    </div>
+        <div id="ofertac"><b><p class="text">Producto de Oferta 3</p></b>
+        <p class="ptx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi enim quo nostrum animi quibusdam quia, eum rem vel facere tenetur perspiciatis doloribus laborum soluta rerum odit neque nisi numquam!</p>
+            <button type="button" class="bofert">Añadir al carro</button>
+    </div>
+    </div>
+    <br>
+    <div><h3 id="ch2">Datos de envio y pago</h1></div>
+        <div class="light-animation">
+        <div class="container">
+            <form action="index.html">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <h4>Dirección de Envío</h4>
+                        <label for="direccion" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion">
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Datos Bancarios</h4>
+                        <label for="iban" class="form-label">IBAN:</label>
+                        <input type="text" class="form-control" id="iban">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre y Apellidos:</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="cvv" class="form-label">CVV:</label>
+                        <input type="number" class="form-control" id="cvv">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="hora-entrega" class="form-label">Hora de Entrega:</label>
+                        <input type="text" class="form-control" id="hora-entrega">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="caducidad" class="form-label">Caducidad:</label>
+                        <input type="date" class="form-control" id="caducidad">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="otros-datos" class="form-label">Otros Datos:</label>
+                        <input type="text" class="form-control" id="otros-datos">
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+<br>
+<br>
+
+    <button type="button" class="btn btn-primary" id="mostrarModal">
+        ENVIAR
+    </button>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="modal fade" id="modalAgradecimiento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h3>GRACIAS POR REALIZAR TU PEDIDO!</h3>
+                </div>
+                <div class="modal-footer">
+                   <a href="index.html"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Agregar un manejador de eventos al botón "mostrarModal"
+        document.getElementById("mostrarModal").addEventListener("click", function () {
+            // Mostrar el modal al hacer clic en el botón
+            var modal = new bootstrap.Modal(document.getElementById("modalAgradecimiento"));
+            modal.show();
+        });
+    </script>
+        <script>
+            var reproductor = document.getElementById("miReproductor");
+            reproductor.play();
+          </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<footer>
+    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://www.rest.com">Pizzaia Piackem</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://sadfgasdfg.com">Pepe Ugarte</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+  </footer>
+    </body>
+  </html>

@@ -1,0 +1,238 @@
+// cuenta.scss
+
+#d5, #d6, #d1 {
+    border: 3px solid white;
+  }
+
+  .b1{
+    background-color:rgba(224, 201, 79, 0.5);
+    border: 3px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    box-shadow: 1px 2px 10px black;
+    width: 250px;
+    height: 65px;
+}
+
+.caja{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around
+}
+
+.bodyd {
+    width: 100vw;
+    height: 100vp;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.imgp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.logo{
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+.slogan{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    width: 550px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top:200px;
+}
+
+#bmenu{
+    background-color:rgba(224, 201, 79, 0.5);
+    border: 3px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    box-shadow: 1px 2px 10px black;
+    width: 400px;
+    height: 65px;
+    margin-left: 35%;
+    margin-top: 35px;
+}
+
+.b1:hover, #bmenu:hover, #b41:hover{
+    background-color:rgb(255, 228, 95) ;
+    transform: scale(1.1);
+    transition: 300ms ease-in-out;
+    font-weight:500;
+}
+
+#mm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu{
+    font-size: 50px;
+}
+
+.mbt{
+    background-color:rgba(161, 161, 161, 0.5);
+    border: 3px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    box-shadow: 1px 2px 10px black;
+    width: 250px;
+    height: 65px;
+}
+
+.mbt:hover, #btm:hover{
+    background-color:rgb(174, 174, 174) ;
+    transform: scale(1.1);
+    transition: 300ms ease-in-out;
+    font-weight:500;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+.slide {
+    flex: 0 0 33.33%; /* Cambiamos el ancho de cada slide a un tercio */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 80%;
+}
+
+.prev-button, .next-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #555;
+}
+
+#bts_cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+#b41{
+    display: block;
+    margin: auto;
+    background-color:rgba(224, 201, 79, 0.5);
+    border: 3px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    box-shadow: 1px 2px 10px black;
+    width: 250px;
+    height: 45px;
+}
+
+#btm{
+    display: block;
+    margin: auto;
+    background-color:rgba(161, 161, 161, 0.5);
+    border: 3px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    box-shadow: 1px 2px 10px black;
+    width: 250px;
+    height: 45px;
+}
+
+#ch1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#ch2{
+    text-align: center;
+    font-size: 30px;
+}
+
+table{
+    margin: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border: 3px solid black;
+}
+  
+  .bit {
+    background-color: rgba(161, 161, 161, 0.5);
+    border: 3px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    box-shadow: 1px 2px 10px black;
+    width: 250px;
+    height: 125px;
+  }
+  
+  .bit:hover {
+    background-color: rgb(174, 174, 174);
+    transform: scale(1.1);
+    transition: 300ms ease-in-out;
+    font-weight: 500;
+  }
+  
+  #play {
+    display: flex !important;
+    justify-content: space-around;
+  }
+  
+  #btm {
+    display: block;
+    margin: auto;
+    background-color: rgba(161, 161, 161, 0.5);
+    border: 3px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    box-shadow: 1px 2px 10px black;
+    width: 250px;
+    height: 45px;
+  }
+  
+  #ch1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  #ch2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  table {
+    margin: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border: 3px solid black;
+  }
+  
