@@ -1,6 +1,7 @@
 #d5, #d6, #d1 {
-  border: 3px solid white;
+  border: 3px solid #ffcca2;
 }
+
 
 .b1 {
   background-color: rgba(224, 201, 79, 0.5);
@@ -20,9 +21,9 @@
 
 .bodyd {
   width: 100vw;
-  height: 100vp;
-  overflow-y: hidden;
+  background-color: ;
   overflow-x: hidden;
+    background-color: #ffcca2;
 }
 
 .imgp {
@@ -46,7 +47,6 @@
   text-align: center;
   margin-left: 200px;
   margin-top: 200px;
-  animation: slide 2s linear infinite;
 }
 
 #bmenu {
@@ -382,21 +382,6 @@ td {
   background-color: #FF7A7A;
   font-weight: bold;
   font-size: 80%;
-}
-
-/* Definir una animación llamada "slide" */
-@keyframes slide {
-  0% {
-    transform: translateX(0); /* Sin desplazamiento horizontal al principio */
-  }
-  100% {
-    transform: translateX(-100px); /* Desplazamiento horizontal de 200px al final */
-  }
-}
-
-/* Aplicar la animación al texto que deseas animar */
-#animm {
- /* Nombre de la animación, duración, temporización y repetición */
 }
 
 /*# sourceMappingURL=output.css.map */
