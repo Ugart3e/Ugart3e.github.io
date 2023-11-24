@@ -4,7 +4,7 @@
     <title>Restaurante</title>
     <link rel="icon" type="image/x-icon" href="/loggo.ico">
     <link rel="stylesheet" href="/sass/output.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <audio id="miReproductor" loop>
       <style>
@@ -17,25 +17,32 @@
         .slogan {
           padding-right:200px;
           padding-bottom: 100px;
-   animation: animateText 2s ease-in-out infinite alternate;
+          animation: animateText 2s ease-in-out infinite alternate;
   }
+        @keyframes animateText {
+         from {
+         transform: scale(1);
+           }
+          to {
+        transform: scale(1.25);
+         }
+     }
 
-/* Define la animación */
-  @keyframes animateText {
-    from {
-     transform: scale(1);
-   }
-   to {
-     transform: scale(1.25);
-   }
-  }
-
+        .container mt-5{
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 300px;
         }
       </style>
       <source src="music.mp3" type="audio/mpeg">
     </audio>
   </head>
+
   <body class="bodyd">
+    
+    
+  
     <div class="caja">
         <button class="b1">Reservar Mesa</button>
         <button class="b1">Donde Estamos</button>
@@ -43,6 +50,33 @@
         <button class="b1">Llámanos</button>
         <a href="iniciar_sesion.html"><button class="b1">Iniciar sesion</button></a>
     </div>    
+
+    <div class="container mt-5">
+      <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="1000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="p1.jpeg" class="d-block w-100" alt="Imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="p2.jpg" class="d-block w-100" alt="Imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="p3.jpeg" class="d-block w-100" alt="Imagen 3">
+          </div>
+          <div class="carousel-item">
+            <img src="promo-1.png" class="d-block w-100" alt="Imagen 3">
+          </div>
+          <div class="carousel-item">
+            <img src="promo-2.jpg" class="d-block w-100" alt="Imagen 3">
+          </div>
+          <div class="carousel-item">
+            <img src="promo-3.jpg" class="d-block w-100" alt="Imagen 3">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
     <div class="imgp">
         <h2 class="slogan">Eat What you Deserve</h2>
         <video id="vid" controls width="640" height="360" style="margin-top: 100px;">
@@ -71,8 +105,10 @@
 <br>
 <p>Agradecemos a todos nuestros clientes por ser parte de nuestra historia y por permitirnos compartir nuestra pasión por la pizza auténtica. ¡Bienvenidos a nuestra pizzería, donde cada pizza cuenta una historia y cada cliente se convierte en parte de nuestra familia culinaria! ¡Esperamos que disfruten de su visita y que cada momento aquí sea tan especial como la primera vez que probaron nuestra deliciosa pizza italiana!</p>
     </div>
-    
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
       var reproductor = document.getElementById("miReproductor");
       reproductor.play();
