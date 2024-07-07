@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-neon {
+    @apply text-white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+                 0 0 10px rgba(255, 255, 255, 0.5),
+                 0 0 20px rgba(0, 140, 255, 0.7),
+                 0 0 30px rgba(0, 21, 255, 0.7),
+                 0 0 40px rgba(123, 0, 255, 0.7),
+                 0 0 55px rgba(0, 89, 255, 0.7),
+                 0 0 75px rgba(0, 38, 255, 0.7);
+  }
+
+  .neon-border {
+    @apply relative border-2 border-transparent rounded-md;
+  }
+  .neon-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: inherit;
+    border: 2px solid rgba(255, 0, 255, 0.7);
+    box-shadow: 0 0 5px rgba(255, 0, 255, 0.5),
+                0 0 10px rgba(255, 0, 255, 0.5),
+                0 0 20px rgba(255, 0, 255, 0.7),
+                0 0 30px rgba(255, 0, 255, 0.7),
+                0 0 40px rgba(255, 0, 255, 0.7),
+                0 0 55px rgba(255, 0, 255, 0.7),
+                0 0 75px rgba(255, 0, 255, 0.7);
+    pointer-events: none;
+  }
+
+}
