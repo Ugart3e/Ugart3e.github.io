@@ -76,7 +76,7 @@ const Portfolio = () => {
   </div>
   <div className='mt-4 p-4 bg-gray-800 text-white rounded-lg'>
     <h3 className='text-lg font-semibold font-poppins'>Additional Projects</h3>
-  <div className='w-48 h-36 m-5 bg-gray-300 rounded-lg flex justify-center' onClick={tetris}><p className='text-center self-center font-poppins text-xl text-blue-600 font-semibold'>TETRIS</p></div>
+  UNDER CONSTRUCTION!
     </div>
 </section>
 
