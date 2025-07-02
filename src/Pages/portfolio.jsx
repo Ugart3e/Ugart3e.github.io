@@ -7,6 +7,7 @@
   import back from '../assets/BackEnd.png'
   import { useNavigate } from 'react-router-dom'
   import MonkeytypeClone from '../assets/MonkeytypeClone.png'
+  import Cartelera from '../assets/Cartelera.png'
 
   const Portfolio = () => {
     
@@ -74,6 +75,7 @@
     </div>
       <div className='mt-4 p-4 bg-gray-800 text-white rounded-lg'>
   <h3 className='text-lg font-semibold font-poppins mb-4'>Additional Projects</h3>
+  <div className='flex flex-row justify-evenly flex-wrap gap-4'>
   <div 
     onClick={() => window.open('https://monkeytype-clone-chi.vercel.app', '_blank')}
     className='cursor-pointer max-w-xs border-2 border-gray-700 rounded-lg overflow-hidden shadow-lg hover:border-blue-500 transition-colors duration-300'
@@ -81,8 +83,20 @@
   >
     <img src={MonkeytypeClone} alt="Miniatura Proyecto" className='w-full h-48 object-fill' />
     <div className='p-4 bg-[#1E2020] text-white font-poppins text-center'>
-      MonkeyType Clone
+      MonkeyType Typetester - Mayo 2025
     </div>
+  </div>
+  <div 
+    onClick={() => window.open('https://cinereact.vercel.app', '_blank')}
+    className='cursor-pointer max-w-xs border-2 border-gray-700 rounded-lg overflow-hidden shadow-lg hover:border-blue-500 transition-colors duration-300'
+    title="Proyecto Ejemplo"
+  >
+    <img src={Cartelera} alt="Miniatura Proyecto" className='w-full h-48 object-fill' />
+    <div className='p-4 bg-[#1E2020] text-white font-poppins text-center'>
+      Cartelera de Cine - Marzo 2023
+    </div>
+  </div>
+  
   </div>
 </div>
   </section>
