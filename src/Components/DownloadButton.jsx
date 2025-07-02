@@ -3,8 +3,8 @@ import Download from '../assets/download.svg';
 const DownloadButton = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/JoseLuisUgarte.pdf'; // Ruta relativa al archivo PDF en la carpeta public
-    link.download = 'JoseLuisUgarte.pdf';
+    link.href = '/CV_JoseLuisUgarte.pdf'; // Ruta relativa al archivo PDF en la carpeta public
+    link.download = 'CV_JoseLuisUgarte.pdf';
     link.click();
   };
 
