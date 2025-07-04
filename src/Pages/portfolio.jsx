@@ -94,7 +94,7 @@
   >
     <img src={Cartelera} alt="Miniatura Proyecto" className='w-full h-48 object-fill' />
     <div className='p-4 bg-[#1E2020] text-white font-poppins text-center'>
-      Cartelera de Cine Redux- Marzo 2023
+      Cartelera de Cine Redux - Marzo 2023
     </div>
   </div>
   <div 
