@@ -8,6 +8,7 @@
   import { useNavigate } from 'react-router-dom'
   import MonkeytypeClone from '../assets/MonkeytypeClone.png'
   import Cartelera from '../assets/Cartelera.png'
+  import Weather from '../assets/Weather.png'
 
   const Portfolio = () => {
     
@@ -91,12 +92,22 @@
     className='cursor-pointer max-w-xs border-2 border-gray-700 rounded-lg overflow-hidden shadow-lg hover:border-blue-500 transition-colors duration-300'
     title="Proyecto Ejemplo"
   >
-    <img src={Cartelera} alt="Miniatura Proyecto" className='w-full h-48 object-fill' />
+    <img src={Weather} alt="Miniatura Proyecto" className='w-full h-48 object-fill' />
     <div className='p-4 bg-[#1E2020] text-white font-poppins text-center'>
       Cartelera de Cine - Marzo 2023
     </div>
   </div>
-  
+  <div 
+    onClick={() => window.open('https://weather-app-one-nu-25.vercel.app/', '_blank')}
+    className='cursor-pointer max-w-xs border-2 border-gray-700 rounded-lg overflow-hidden shadow-lg hover:border-blue-500 transition-colors duration-300'
+    title="Proyecto Ejemplo"
+  >
+    <img src={Cartelera} alt="Miniatura Proyecto" className='w-full h-48 object-fill' />
+    <div className='p-4 bg-[#1E2020] text-white font-poppins text-center'>
+      WeatherApp - Junio 2025
+    </div>
+  </div>
+
   </div>
 </div>
   </section>
